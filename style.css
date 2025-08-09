@@ -9,6 +9,7 @@ html, body{
 body{
     background: linear-gradient(180deg, #6ee7b7 0%, #3b82f6 100%);
     background-attachment: fixed;
+
 }
 
 header{
@@ -21,6 +22,11 @@ header{
     padding: 15px 0;
     z-index: 1000;
 }
+nav{
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 20px;
+}
 
 nav ul{
     list-style: none;
@@ -30,12 +36,34 @@ nav ul{
     padding: 0;
     margin: 0;
 }
-
+.location{
+    font-size: 20px;
+    margin-right: 20px;
+    color:white;
+    background-color: #009E6E;
+    margin-right:40px ;
+}
 nav a{
+    display: block;
+    margin-top:20px;
+    margin-right: 40px;
+    font-size: 16px;
+    color: white;
+    padding: 10px 20px;
     text-decoration: none;
-    color: #ffffff;
-    font-weight: 600;
-    font-size: 1.1rem;
-    padding: 8px 15px;
 }
 
+nav a:hover {
+    background-color: #ffffff;
+    color: #009E6E;
+    border: 1px solid #009E6E;
+    transition: background-color 0.3s, color 0.3s, border 0.3s;
+}
+.logo{
+    width: 175px;
+    height: 175px;
+    margin-right: 600px;
+    margin-top: -50px;
+    margin-bottom: -50px;
+    margin-right: -10px;
+}
