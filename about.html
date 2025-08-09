@@ -10,23 +10,25 @@
     </head>
 
     <body>
-        <header>
-            <nav>
-            <h1>City Explore</h1>
-                <ul>
-                    <li><a href="index.html">Home</a></li>
-                    <li><a href="favorites.html">Favorites</a></li>
-                    <li><a href="about.html">Contact</a></li>
-                </ul>
-            </nav>
-        </header>
+    <header>
+    <nav>
+      <ul>
+        <img src="android-chrome-512x512-removebg-preview.png" alt="Logo" class="logo" onclick="gohome()"/>
+        <li><a href="index.html" class = "location">Home</a></li>
+        <li><a href="favorites.html">Favorites</a></li>
+        <li><a href="about.html">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
 
   <main class="container" id="search-section">
     <h1> Speak to us! </h1>
         <p>Send us a message</p>
     <section >
       <form id="search-form" aria-label="Search city">
-        <label for="city-input">City name</label>
+        <label for="city-input">Fill out the Form!</label>
+        <input type="text"id="name-input" name="name"placeholder="Name" required /><br>
+        <input type="text"id="email-input" name="email"placeholder="Email" required /><br>
         <input type="text"id="city-input" name="city"placeholder="Message" required /><br>
         <button type="submit"onclick="start()">Search</button>
       </form>
