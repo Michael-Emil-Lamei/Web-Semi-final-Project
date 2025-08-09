@@ -3,7 +3,9 @@ Simple interactive city info & weather finder.
 
 ## Author
 Mohamed Assem
+
 Michael Emil
+
 Moaz Naser
 
 ## Description
