@@ -1,0 +1,40 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>City Explore</title>
+  <link rel="stylesheet" href="styles/style.css" />
+  <link rel="icon" href="android-chrome-512x512-removebg-preview.png" />
+</head>
+<body>
+  <header>
+    <nav>
+      <h1>City Explore</h1>
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="favorites.html">Favorites</a></li>
+        <li><a href="about.html">About</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <section id="search-section">
+      <form id="search-form" aria-label="Search city">
+        <label for="city-input">City name</label>
+        <input id="city-input" name="city" required />
+        <button type="submit">Search</button>
+      </form>
+    </section>
+    <section id="results" aria-live="polite">
+    </section>
+  </main>
+
+  <footer>
+    <p>Made by Mohamed Assem & Michael Emil — STEM CSC Offline Chapter</p>
+  </footer>
+
+  <script src="scripts/main.js" defer></script>
+</body>
+</html>
