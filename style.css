@@ -9,33 +9,41 @@ body {
     display: flex;
     flex-direction: column;
 }
-
-header{
+header {
     position: fixed;
     top: 0;
     left: 0;
     width: 100%;
     background-color: rgba(255, 255, 255, 0.3);
     backdrop-filter: blur(10px);
+    padding: 10px 0;
     z-index: 1000;
-    margin-bottom:30px;
+    margin-bottom: auto;
+}
+
+nav {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    padding: 10px 20px;
-}
-nav{
-    align-items: center;
     padding: 0 20px;
+    flex-wrap: wrap;
 }
 
-nav ul{
+nav ul {
     list-style: none;
     display: flex;
+    flex-wrap: wrap;
     justify-content: center;
     padding: 0;
     margin: 0;
 }
+
+.logo {
+    width: 120px;
+    height: auto;
+    margin: 0 20px 0 0;
+}
+
 .location{
     font-size: 20px;
     margin-right: 20px;
@@ -62,14 +70,6 @@ nav a:hover {
     border-radius: 16px;
     transition: background-color 0.3s, color 0.3s, border 0.3s;
     cursor: pointer;
-}
-.logo{
-    width: 175px;
-    height: 175px;
-    margin-right: 500px;
-    margin-top: -50px;
-    margin-bottom: -50px;
-
 }
 
 
@@ -318,37 +318,41 @@ object-fit: cover;
 .text_weather { grid-column: 1; grid-row: 2; }
 .weather_img { grid-column: 2; grid-row: 2; }
 
-@media (max-width: 480px) {
-    header {
-        display: flex;
-        flex-direction: column; 
+@media (max-width: 768px) {
+    nav {
+        flex-direction: column;
         align-items: center;
-        gap: 8px;
-        padding: 8px;
     }
 
     .logo {
-        width: 50px;
-        height: auto;
+        margin-bottom: 10px;
     }
+
     nav ul {
-        display: flex;
-        gap: 12px;
-        list-style: none;
-        padding: 0;
-        margin: 0;
-        flex-wrap: wrap; 
         justify-content: center;
     }
 
-    .location {
-        width: 90%; 
-        max-width: 300px;
-        font-size: 14px;
-    }
-    input[type="text"] {
-        width: 100%;
-        font-size: 14px;
+    nav a {
+        margin: 5px;
     }
 }
 
+@media (max-width: 480px) {
+    .logo {
+        width: 90px;
+    }
+
+    nav a {
+        font-size: 0.9rem;
+        padding: 6px 12px;
+    }
+
+    .image-links {
+        gap: 10px;
+    }
+
+    .image-links a {
+        width: 50px;
+        height: 50px;
+    }
+}
