@@ -16,9 +16,10 @@ header {
     width: 100%;
     background-color: rgba(255, 255, 255, 0.3);
     backdrop-filter: blur(10px);
-    padding: 10px 0;
+    padding: 8px 16px;
     z-index: 1000;
     margin-bottom: auto;
+     height: auto;
 }
 
 nav {
@@ -39,9 +40,9 @@ nav ul {
 }
 
 .logo {
-    width: 120px;
-    height: auto;
+    width: 100px;
     margin: 0 20px 0 0;
+    height: 40px; 
 }
 
 .location{
@@ -356,3 +357,4 @@ object-fit: cover;
         height: 50px;
     }
 }
+
