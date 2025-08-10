@@ -315,36 +315,42 @@ object-fit: cover;
 .text_weather { grid-column: 1; grid-row: 2; }
 .weather_img { grid-column: 2; grid-row: 2; }
 
-@media (max-width: 768px) {
+@media (max-width: 600px) {
     header {
-        padding: 8px 0; 
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        flex-wrap: nowrap; 
+        padding: 5px 10px;
     }
     .logo {
-        width: 100px;
+        width: 40px;
         height: auto;
-        margin: 0 auto 5px; 
     }
     nav {
-        flex-direction: column;
-        padding: 0 10px;
+        display: flex;
+        align-items: center;
+        gap: 10px;
     }
     nav ul {
-        flex-direction: column;
-        gap: 5px;
+        display: flex;
+        flex-direction: row;
+        gap: 8px;
+        margin: 0;
+        padding: 0;
+        list-style: none;
     }
-    nav a {
-        margin: 5px 0;
-        padding: 6px 12px;
-        font-size: 16px; 
+
+    nav li {
+        display: inline-block;
     }
     .location {
-        font-size: 16px;
-        margin: 0 0 10px;
-        padding: 4px 8px;
+        flex-shrink: 0;
+        width: 100px;
+        font-size: 14px;
+    }
+    input[type="text"] {
+        max-width: 120px;
+        font-size: 14px;
     }
 }
-
-
-
-
-
