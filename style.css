@@ -63,7 +63,7 @@ nav a.active {
     color: white;
     text-decoration: none;
     margin-top: 20px;
-    z-index:3;
+    z-index:900;
 
 }
 
@@ -73,7 +73,7 @@ nav a.active {
     margin: 100px auto;
     padding:30Px;
     max-width: 400px;
-    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 6px 24px rgba(0, 0, 0, 0.1);
     border-radius: 16px;
     color:black;
     z-index: -1;
@@ -171,6 +171,7 @@ height: 100%;
 object-fit: cover;
 
 }
+
 
 
 
