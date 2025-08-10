@@ -19,7 +19,7 @@ header{
     backdrop-filter: blur(10px);
     padding: 15px 0;
     z-index: 1000;
-    margin-bottom: 30 px;
+    margin-bottom: auto;
 }
 nav{
     align-items: center;
@@ -236,6 +236,7 @@ object-fit: cover;
         opacity: 1;
     }
 }
+
 
 
 
