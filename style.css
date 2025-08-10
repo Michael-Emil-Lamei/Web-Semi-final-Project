@@ -1,14 +1,13 @@
-/* ===== GLOBAL STYLES ===== */
+
 body {
     margin: 0;
     font-family: Arial, sans-serif;
-    background: linear-gradient(180deg, #6ee7b7 0%, #3b82f6 100%);
+    background: linear-gradient(135deg, #0077b6, #00b4d8, #90e0ef, #a8eb12);
     min-height: 100vh;
     padding-top: 70px;
     color: white;
 }
 
-/* ===== NAVBAR ===== */
 header {
     position: fixed;
     top: 0;
@@ -48,7 +47,7 @@ nav a.active {
     background-color: rgba(255, 255, 255, 0.3);
 }
 
-/* ===== MAIN CONTENT ===== */
+
 .intro, .search-section, .about-section {
     text-align: center;
     max-width: 600px;
@@ -71,7 +70,6 @@ nav a.active {
     background: rgba(255, 255, 255, 0.5);
 }
 
-/* ===== FORM ===== */
 form {
     display: flex;
     justify-content: center;
@@ -96,7 +94,6 @@ button:hover {
     background: rgba(255, 255, 255, 0.6);
 }
 
-/* ===== FOOTER ===== */
 footer {
     text-align: center;
     padding: 5px;
@@ -157,5 +154,4 @@ transform: scale(1.1);
 width: 100%;
 height: 100%;
 object-fit: cover;
-
 }
