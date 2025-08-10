@@ -14,7 +14,6 @@ document.addEventListener("DOMContentLoaded", () => {
         resultDiv.innerHTML = "Loading...";
 
         try {
-            // Wikipedia API call
             const res = await fetch(`https://en.wikipedia.org/api/rest_v1/page/summary/${encodeURIComponent(cityInput)}`);
             if (!res.ok) throw new Error("City not found");
 
@@ -27,7 +26,6 @@ document.addEventListener("DOMContentLoaded", () => {
                 <p><a href="${data.content_urls.desktop.page}" target="_blank">Read more on Wikipedia</a></p>
             `;
 
-            // Save last search in localStorage
             localStorage.setItem("lastSearch", cityInput);
 
         } catch (err) {
@@ -35,9 +33,9 @@ document.addEventListener("DOMContentLoaded", () => {
         }
     });
 
-    // Load last search if available
     const lastSearch = localStorage.getItem("lastSearch");
     if (lastSearch) {
         document.getElementById("cityInput").value = lastSearch;
     }
 });
+
