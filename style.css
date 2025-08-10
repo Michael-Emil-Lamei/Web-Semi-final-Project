@@ -318,7 +318,7 @@ object-fit: cover;
 .text_weather { grid-column: 1; grid-row: 2; }
 .weather_img { grid-column: 2; grid-row: 2; }
 
-@media (max-width: 600px) {
+@media (max-width: 480px) {
     header {
         display: flex;
         flex-direction: column; 
@@ -351,3 +351,4 @@ object-fit: cover;
         font-size: 14px;
     }
 }
+
