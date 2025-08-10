@@ -9,30 +9,44 @@ body {
     display: flex;
     flex-direction: column;
 }
-
-header{
+header {
     position: fixed;
     top: 0;
     left: 0;
     width: 100%;
     background-color: rgba(255, 255, 255, 0.3);
     backdrop-filter: blur(10px);
-    padding: 15px 0;
+    padding: 10px 0;
     z-index: 1000;
     margin-bottom: auto;
 }
-nav{
+
+nav {
+    display: flex;
     align-items: center;
+    justify-content: space-between;
     padding: 0 20px;
+    flex-wrap: wrap;
 }
 
-nav ul{
+nav ul {
     list-style: none;
     display: flex;
+    flex-wrap: wrap;
     justify-content: center;
     padding: 0;
     margin: 0;
 }
+
+
+
+.logo {
+    width: 120px;
+    height: auto;
+    margin: 0 20px 0 0;
+}
+
+
 .location{
     font-size: 20px;
     margin-right: 20px;
@@ -60,14 +74,7 @@ nav a:hover {
     transition: background-color 0.3s, color 0.3s, border 0.3s;
     cursor: pointer;
 }
-.logo{
-    width: 175px;
-    height: 175px;
-    margin-right: 500px;
-    margin-top: -50px;
-    margin-bottom: -50px;
 
-}
 
 .intro, .search-section, .about-section {
     text-align: center;
@@ -114,15 +121,20 @@ button {
 button:hover {
     background: rgba(255, 255, 255, 0.6);
 }
-
 footer {
     text-align: center;
-    padding: 5px;
+    padding: 10px;
     background: rgba(255, 255, 255, 0.15);
     bottom: 0;
     width: 100%;
-    margin: auto;
+}
 
+.image-links {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
+    margin-bottom: 15px;
 }
 
 .footer-content {
@@ -148,17 +160,9 @@ text-align: center;
 }
 
 
-.image-links {
-display: flex;
-justify-content: center;
-gap: 300px;
-margin-bottom: 15px;
-}
-
-
 .image-links a {
-width: 70px;
-height: 70px;
+width: 60px;
+height: 60px;
 border-radius: 50%;
 overflow: hidden;
 border: 2px hidden;
@@ -316,7 +320,38 @@ object-fit: cover;
 .text_weather { grid-column: 1; grid-row: 2; }
 .weather_img { grid-column: 2; grid-row: 2; }
 
+@media (max-width: 768px) {
+    nav {
+        flex-direction: column;
+        align-items: center;
+    }
+    .logo {
+        margin-bottom: 10px;
+    }
+    nav ul {
+        justify-content: center;
+    }
+    nav a {
+        margin: 5px;
+    }
+}
 
+@media (max-width: 480px) {
+    .logo {
+        width: 90px;
+    }
+    nav a {
+        font-size: 0.9rem;
+        padding: 6px 12px;
+    }
+    .image-links {
+        gap: 10px;
+    }
+    .image-links a {
+        width: 50px;
+        height: 50px;
+    }
+}
 
 
 
