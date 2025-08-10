@@ -316,39 +316,33 @@ object-fit: cover;
 .weather_img { grid-column: 2; grid-row: 2; }
 
 @media (max-width: 768px) {
+    header {
+        padding: 8px 0; 
+    }
+    .logo {
+        width: 100px;
+        height: auto;
+        margin: 0 auto 5px; 
+    }
     nav {
         flex-direction: column;
-        align-items: center;
-    }
-    .logo {
-        margin-bottom: 10px;
+        padding: 0 10px;
     }
     nav ul {
-        justify-content: center;
+        flex-direction: column;
+        gap: 5px;
     }
     nav a {
-        margin: 5px;
-    }
-}
-
-@media (max-width: 480px) {
-    .logo {
-        width: 90px;
-    }
-    nav a {
-        font-size: 0.9rem;
+        margin: 5px 0;
         padding: 6px 12px;
+        font-size: 16px; 
     }
-    .image-links {
-        gap: 10px;
-    }
-    .image-links a {
-        width: 50px;
-        height: 50px;
+    .location {
+        font-size: 16px;
+        margin: 0 0 10px;
+        padding: 4px 8px;
     }
 }
-
-
 
 
 
