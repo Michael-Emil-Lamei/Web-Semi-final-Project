@@ -74,6 +74,7 @@ nav a.active {
     max-width: 400px;
     box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
     border-radius: 16px;
+    color:black;
 }
 .cta-btn:hover {
     background: rgba(255, 255, 255, 0.5);
@@ -168,6 +169,7 @@ height: 100%;
 object-fit: cover;
 
 }
+
 
 
 
