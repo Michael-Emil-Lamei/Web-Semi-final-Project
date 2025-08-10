@@ -1,114 +1,110 @@
-html, body{
-    height: 100%;
+/* ===== GLOBAL STYLES ===== */
+body {
     margin: 0;
+    font-family: Arial, sans-serif;
+    background: linear-gradient(135deg, #0077b6, #00b4d8, #90e0ef, #a8eb12);
+    min-height: 100vh;
     padding-top: 70px;
+    color: white;
 }
 
-
-
-body{
-    background: linear-gradient(180deg, #6ee7b7 0%, #3b82f6 100%);
-    background-attachment: fixed;
-
-}
-
-header{
+/* ===== NAVBAR ===== */
+header {
     position: fixed;
     top: 0;
     left: 0;
     width: 100%;
-    background-color: rgba(255, 255, 255, 0.3);
+    background-color: rgba(255, 255, 255, 0.2);
     backdrop-filter: blur(10px);
-    padding: 15px 0;
+    padding: 30px 0;
     z-index: 1000;
 }
-nav{
-    align-items: center;
-    justify-content: space-between;
-    padding: 0 20px;
-}
 
-nav ul{
+nav ul {
     list-style: none;
+    padding: 0;
+    margin: 0;
     display: flex;
     justify-content: center;
     gap: 30px;
-    padding: 0;
-    margin: 0;
-}
-.location{
-    font-size: 20px;
-    margin-right: 20px;
-    color:white;
-    background-color: #009E6E;
-    margin-right:40px ;
-}
-nav a{
-    display: block;
-    margin-top:20px;
-    margin-right: 40px;
-    font-size: 16px;
-    color: white;
-    padding: 10px 20px;
-    text-decoration: none;
-    font-size: 20px;
 }
 
-nav a:hover {
-    background-color: #ffffff;
-    color: #009E6E;
-    border: 1px solid #009E6E;
-    transition: background-color 0.3s, color 0.3s, border 0.3s;
+nav a {
+    text-decoration: none;
+    color: white;
+    font-weight: 600;
+    padding: 10px 15px;
+    border-radius: 8px;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+nav a:hover,
+nav a:focus {
+    background-color: rgba(255, 255, 255, 0.25);
+    transform: scale(1.05);
+}
+
+nav a.active {
+    background-color: rgba(255, 255, 255, 0.3);
+}
+
+/* ===== MAIN CONTENT ===== */
+.intro, .search-section, .about-section {
+    text-align: center;
+    max-width: 600px;
+    margin: auto;
+    padding: 20px;
+}
+
+.cta-btn {
+    display: inline-block;
+    background: rgba(255, 255, 255, 0.3);
+    padding: 10px 20px;
+    border-radius: 8px;
+    color: white;
+    text-decoration: none;
+    margin-top: 20px;
+
+}
+
+.cta-btn:hover {
+    background: rgba(255, 255, 255, 0.5);
+}
+
+/* ===== FORM ===== */
+form {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    margin-top: 20px;
+}
+
+input, button {
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+}
+
+button {
+    background: rgba(255, 255, 255, 0.4);
+    color: white;
+    font-weight: bold;
     cursor: pointer;
 }
-.logo{
-    width: 175px;
-    height: 175px;
-    margin-right: 600px;
-    margin-top: -50px;
-    margin-bottom: -50px;
-    margin-right: -10px;
+
+button:hover {
+    background: rgba(255, 255, 255, 0.6);
 }
-.container {
+
+/* ===== FOOTER ===== */
+footer {
     text-align: center;
-    background-color: white;
-    margin: 100px auto;
-    padding:30Px;
-    max-width: 400px;
-    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
-    border-radius: 16px;
+    padding: 5px;
+    background: rgba(255, 255, 255, 0.15);
+    position: fixed;
+    bottom: 0;
+    width: 100%;
 }
-button {
-    margin-top: 20px;
-    padding: 10px 20px;
-    background-color: #4ade80;
-    border-radius: 16px;
-    color:white;   
-    border-color: #4ade80;
-    font-size: 16px;
-    cursor:pointer;
-}
-
-
-input[type="text"] {
-    width:90%;
-    padding: 10px;
-    border-radius: 10px;
-    margin: 10px;
-    border: 2px solid #4ade80;
-    background-color: white;
-    font-size: 16px;
-}
-
-.footer {
-  background-color: #f4f4f4;
-  padding: 20px 0;
-  margin-top: 170px;
-  margin-bottom: 0px;
-  position: relative;
-  border-top: 1px solid #ccc;
-}
-
 
 .footer-content {
   text-align: center;
@@ -119,7 +115,7 @@ input[type="text"] {
 .footer-content a {
   color: green;
   text-decoration: none;
-  margin: 0 10px;
+  margin: 0 5px;
 }
 
 .footer-content a:hover {
@@ -127,8 +123,8 @@ input[type="text"] {
 }
 
 .footer-contact {
-background: white;
-padding: 20px;
+
+padding: 5px;
 text-align: center;
 }
 
@@ -146,7 +142,7 @@ width: 80px;
 height: 80px;
 border-radius: 50%;
 overflow: hidden;
-border: 2px solid white;
+border: 2px hidden;
 transition: transform 0.3s;
 display: inline-block;
 }

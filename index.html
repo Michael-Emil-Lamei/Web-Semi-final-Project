@@ -1,47 +1,42 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="utf-8" />
-  <meta name="viewport" content="width=device-width,initial-scale=1" />
-  <title>City Explore</title>
-  <link rel="stylesheet" href="style.css" />
-  <link rel="icon" href="android-chrome-512x512-removebg-preview.png" />
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>City Explorer</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" type="image/png" href="android-chrome-512x512-removebg-preview.png">
 </head>
 <body>
-  <header>
-    <nav>
-      <ul>
-        <img src="android-chrome-512x512-removebg-preview.png" alt="Logo" class="logo" onclick="gohome()"/>
-        <li><a href="index.html" class = "location">Home</a></li>
-        <li><a href="favorites.html">Favorites</a></li>
-        <li><a href="about.html">Contact</a></li>
-      </ul>
-    </nav>
-  </header>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="search.html">Search City</a></li>
+                <li><a href="about.html">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
 
-  <main class="container" id="search-section">
-    <h1>🏙️ Welcome to City Explore </h1>
-        <p>Search about your city</p>
-    <section >
-      <form id="search-form" aria-label="Search city">
-        <label for="city-input">City name</label>
-        <input type="text"id="city-input" name="city"placeholder="City" required /><br>
-        <button type="submit"onclick="start()">Search</button>
-      </form>
-    </section>
-  </main>
+    <main>
+        <section class="intro">
+            <h1>Welcome to City Explorer</h1>
+            <p>Discover new information about any city around the globe instantly</p>
+            <a href="search.html" class="cta-btn">Discover</a>
+        </section>
+    </main>
 
-  <footer class="footer">
-  <div class="footer-content">
-    <p>Made by Mohamed Assem & Michael Emil — STEM CSC Offline Chapter</p>
-    <p>
-      <a href="#">Privacy Policy</a> 
-      <a href="#">Terms of Service</a> 
-      <a href="#">Contact Us</a>
-    </p>
-  </div>
+    <footer class="footer-contact">
+        <div class="footer-content">
+            <p>Made by Mohamed Assem & Michael Emil — STEM CSC Offline Chapter</p>
+        <div class="image-links">
+  
+            <a href="https://github.com/Michael-Emil-Lamei/Web-Semi-final-Project"><img src="https://logos-world.net/wp-content/uploads/2020/11/GitHub-Symbol.png"></a>
+            <a href="https://hackclub.slack.com/team/U091FQE9QR4"><img src="https://th.bing.com/th/id/OIP.sq9Zw7FKyBGJzxjmzfEEXQHaEK?rs=1&pid=ImgDetMain&cb=idpwebp2&o=7&rm=3"></a>
+            <a href="https://www.linkedin.com/in/michael-emil-239554362?lipi=urn%3Ali%3Apage%3Ad_flagship3_profile_view_base_contact_details%3B2TF22OomRj2hDwEuvmKCZA%3D%3D"><img src="https://th.bing.com/th/id/R.09676c4b35991c9083ec478650588c98?rik=s71Ry2vwzEfPLg&pid=ImgRaw&r=0"></a>
+
+        </div>
+        </div>
 </footer>
-
-  <script src="scripts/main.js" defer></script>
 </body>
 </html>
