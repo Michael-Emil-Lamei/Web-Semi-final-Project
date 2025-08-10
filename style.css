@@ -107,7 +107,9 @@ footer {
   font-size: 14px;
   color: #555;
 }
-
+.footer{margin-top: 300px;
+padding: 5px;
+text-align: center;}
 .footer-content a {
   color: green;
   text-decoration: none;
@@ -155,5 +157,6 @@ height: 100%;
 object-fit: cover;
 
 }
+
 
 
