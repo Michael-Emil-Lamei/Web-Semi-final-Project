@@ -23,7 +23,7 @@ document.addEventListener("DOMContentLoaded", () => {
                 <h2>${data.title}</h2>
                 <p>${data.extract}</p>
                 ${data.thumbnail ? `<img src="${data.thumbnail.source}" alt="${data.title} image">` : ""}
-                <p><a href="${data.content_urls.desktop.page}" target="_blank">Read more on Wikipedia</a></p>
+                <p><a href="${data.content_urls.desktop.page}" target="_blank">Read more</a></p>
             `;
 
             localStorage.setItem("lastSearch", cityInput);
@@ -38,4 +38,5 @@ document.addEventListener("DOMContentLoaded", () => {
         document.getElementById("cityInput").value = lastSearch;
     }
 });
+
 
