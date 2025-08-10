@@ -62,7 +62,7 @@ nav a.active {
     border-radius: 8px;
     color: white;
     text-decoration: none;
-    margin-top: 20px;
+    margin-top: 200px;
     z-index:900;
 
 }
@@ -171,6 +171,7 @@ height: 100%;
 object-fit: cover;
 
 }
+
 
 
 
