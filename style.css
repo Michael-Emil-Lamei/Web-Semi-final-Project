@@ -42,7 +42,7 @@ nav ul {
 .logo {
     width: 100px;
     margin: 0 20px 0 0;
-    height: 40px; 
+    height: 120px; 
 }
 
 .location{
@@ -319,42 +319,5 @@ object-fit: cover;
 .text_weather { grid-column: 1; grid-row: 2; }
 .weather_img { grid-column: 2; grid-row: 2; }
 
-@media (max-width: 768px) {
-    nav {
-        flex-direction: column;
-        align-items: center;
-    }
 
-    .logo {
-        margin-bottom: 10px;
-    }
-
-    nav ul {
-        justify-content: center;
-    }
-
-    nav a {
-        margin: 5px;
-    }
-}
-
-@media (max-width: 480px) {
-    .logo {
-        width: 90px;
-    }
-
-    nav a {
-        font-size: 0.9rem;
-        padding: 6px 12px;
-    }
-
-    .image-links {
-        gap: 10px;
-    }
-
-    .image-links a {
-        width: 50px;
-        height: 50px;
-    }
-}
 
